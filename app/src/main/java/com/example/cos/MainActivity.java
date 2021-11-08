@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
+                    Czerwony.setChecked(false);
+                    Niebieski.setChecked(false);
                     zdjecie.setColorFilter(getResources().getColor(R.color.green));
                 } else {
                     zdjecie.setColorFilter(null);
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
+                    Zielony.setChecked(false);
+                    Czerwony.setChecked(false);
                     zdjecie.setColorFilter(getResources().getColor(R.color.blue));
                 } else {
                     zdjecie.setColorFilter(null);
@@ -46,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
+                    Zielony.setChecked(false);
+                    Niebieski.setChecked(false);
                     zdjecie.setColorFilter(getResources().getColor(R.color.red));
                 } else {
                     zdjecie.setColorFilter(null);//a
